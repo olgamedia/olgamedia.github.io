@@ -59,18 +59,14 @@
 
 		<div id="contact">
 			<div class="middle">
-				<div class="half">
-					<h3>Contact</h3>
-					
-					<p><%= @contact.email %></p>
-					<p><%= @contact.phone %></p>
-					<p><%= @contact.address %></p>
-				</div>
-
-				<div class="half">
-					<h3>Social Media</h3>
-				</div>
+				<p id="address"><%= @contact.address %></p>
+				<p id="phone"><%= @contact.phone %></p>
+				<p id="email"><%= @contact.email %></p>
 			</div>
+		</div>
+
+		<div id="copyright">
+			<p><a class="builtBy" href="http://www.petertinti.com">Built with <img src="img/heart.svg"/> by Peter Tinti.</a></p>
 		</div>
 	</body>
 </html>

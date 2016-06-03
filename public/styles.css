@@ -287,7 +287,7 @@ nav a {
 	overflow: hidden;
 }
 .event {
-	width: 600px;
+	width: 100%;
 }
 .eventTitle {
 	color: #666;
@@ -421,13 +421,12 @@ hr {
 	color: lightgray;
 	font: 400 14px/16px "Montserrat", sans-serif;
 
-	position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 #contact p:nth-child(even) {
 	padding: 0 10px;
@@ -467,4 +466,62 @@ hr {
 	width: auto;
 	height: 14px;
 	top: 3px;
+}
+
+
+@media (max-width: 1000px) {
+	#banner {
+		height: 400px;
+	}
+	.slideImage {
+		display: none;
+	}
+	.slideContent {
+		width: 100%;
+	}
+	.project {
+		width: 50%;
+	}
+	#calendar {
+		display: none;
+	}
+	#eventList {
+		width: 100%;
+		max-width: 600px;
+	}
+}
+@media (max-width: 580px) {
+	.serviceIcon {
+		float: none;
+		width: 70px;
+		margin: 0 auto;
+	}
+	.serviceText {
+		display: none;
+	}
+	.clientLogo {
+		width: 25%;
+	}
+	.clientLogo:nth-child(5), .clientLogo:nth-child(6) {
+		display: none;
+	}
+	.project {
+		width: 100%;
+	}
+	#contact {
+		height: auto;
+		padding: 20px 0;
+	}
+	#contact p {
+		width: 100%;
+		top: 0;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+	#contact #phone {
+		padding: 10px 0;
+	}
 }

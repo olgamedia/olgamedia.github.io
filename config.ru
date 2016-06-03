@@ -5,6 +5,11 @@ configure(:development) do
   set :port, 8080
   set :environment, :development
 
+  set :cache_enabled, true
+  set :cache_output_dir, "#{settings.root}/public/cache"
+
+  set :bind, "0.0.0.0"
+
   DataMapper.setup :default, {
     :adapter  => "postgres",
     :database => "olga_media_development",
@@ -33,7 +38,7 @@ configure(:production) do
 
   Dir["lib/*.rb"].each {|file| require file }
 
-  DataMapper.finalize
+  DataMapper.finalize.auto_upgrade!
 end
 
 require "./app"
