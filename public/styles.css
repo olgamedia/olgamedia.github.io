@@ -121,6 +121,7 @@ nav a {
 	height: 100%;
 	padding: 20px;
 	text-align: left;
+	cursor: pointer;
 }
 .service.active {
 	height: calc(100% - 5px);
@@ -448,4 +449,22 @@ hr {
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
+}
+#copyright {
+	height: 18px;
+	width: 100%;
+	text-align: center;
+	background: #336E7B url(img/lines.png);
+	overflow: hidden;
+}
+.builtBy {
+	color: white;
+	text-align: center;
+	font: 400 14px/18px "Montserrat", sans-serif;
+}
+.builtBy img {
+	display: inline;
+	width: auto;
+	height: 14px;
+	top: 3px;
 }

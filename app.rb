@@ -11,7 +11,6 @@ def protected!
 end
 
 get "/" do
-	asdasdsa
 	@events = Event.all
 	@contact = Contact.first_or_create(email: "Olga@OlgaMedia.com", phone: "+1.408-489-0852", address: "262 Meadow Pine Place, San Jose, CA 95125, USA")
 	erb :index
