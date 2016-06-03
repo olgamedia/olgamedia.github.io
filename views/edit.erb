@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Olga Media | Edit</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<div class="middle">
+				<a id="logo" href="/" rel="home" title="Olga Media"><img src="img/olga_media_logo.svg" alt="Olga Media"></a>
+
+				<nav>
+					<a href="/logout">Logout</a>
+				</nav>
+			</div>
+		</header>
+
+		<div id="events">
+			<div class="middle">
+				<h2 class="eventsSectionTitle">Events</h2>
+
+				<div id="eventList">
+					<% @@events.each_with_index do |event, index| %>
+						<div class="event">
+							<a href="/event/remove/<%= index %>" class="removeEvent">x</a>
+
+							<h3 class="eventTitle"><%= event[:title] %></h3>
+							<p class="eventSubTitle">Date: <%= event[:date] %> | Fee: <%= event[:fee] %></p>
+
+							<p class="eventSummary"><%= event[:summary] %></p>
+							<p class="eventAddress"><%= event[:address] %></p>
+							<a href="<%= event[:link] %>" class="eventLink"><%= event[:linkText] %></a>
+							<hr>
+						</div>
+					<% end %>
+
+					<form action="/event/add" method="POST" id="addEvent">
+						<label>Title</label>
+					  <input name="event[title]"></input>
+					  <label class="lInput">Date</label>
+					  <label class="rInput">Fee</label>
+					  <input name="event[date]" class="lInput"></input>
+					  <input name="event[fee]" class="rInput"></input>
+					  <label>Summary</label>
+					  <textarea name="event[summary]"></textarea>
+					  <label>Address</label>
+					  <input name="event[address]"></input>
+					  <label class="lInput">Link</label>
+					  <label class="rInput">Link Text</label>
+					  <input name="event[link]" class="lInput"></input>
+					  <input name="event[linkText]" class="rInput"></input>
+					  <input type="submit" value="Submit" class="submit">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact">
+			<div class="middle">
+				<div class="half">
+					<h3>Contact</h3>
+					
+					<p><%= @@contact[:email] %></p>
+					<p><%= @@contact[:phone] %></p>
+					<p><%= @@contact[:address] %></p>
+				</div>
+
+				<div class="half">
+					<h3>Social Media</h3>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
