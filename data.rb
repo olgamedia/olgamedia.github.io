@@ -1,8 +1,0 @@
-@@events = [
-	{title: "International Womens Day", date: "3.8.16", fee: "15", summary: "Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.", address: "12345 Some street, San Jose, CA", link: "www.google.com", linkText: "google"},
-	{title: "International Womens Day", date: "3.8.16", fee: "15", summary: "Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.", address: "12345 Some street, San Jose, CA", link: "www.google.com", linkText: "google"},
-	{title: "International Womens Day", date: "3.8.16", fee: "15", summary: "Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.", address: "12345 Some street, San Jose, CA", link: "www.google.com", linkText: "google"},
-	{title: "International Womens Day", date: "3.8.16", fee: "15", summary: "Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.", address: "12345 Some street, San Jose, CA", link: "www.google.com", linkText: "google"}
-]
-
-@@contact = {email: "Olga@OlgaMedia.com", phone:"+1.408-489-0852", address: "262 Meadow Pine Place, San Jose, CA 95125, USA"}

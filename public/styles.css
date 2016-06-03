@@ -103,10 +103,6 @@ nav a {
 	float: left;
 	width: 360px;
 	height: 100%;
-	/*background: url(img/service_outreach_icon.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;*/
 }
 .slideImage img {
 	width: 100%;
@@ -215,20 +211,6 @@ nav a {
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-
-/*.clientLogo:before {
-	content: "";
-	display: block;
-	padding-top: 56.25%; 
-}*/
-/*.clientLogo img {
-	position:  absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-}*/
 #projects {
 	width: 100%;
 	overflow: hidden;
@@ -294,6 +276,9 @@ nav a {
 	color: #666;
 	padding: 40px 0;
 	font: 400 28px/38px "Montserrat", sans-serif;
+}
+.noEvents {
+	font: 400 16px/18px "Montserrat", sans-serif;
 }
 #eventList {
 	float: left;

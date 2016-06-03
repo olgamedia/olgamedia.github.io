@@ -11,23 +11,28 @@ def protected!
 end
 
 get "/" do
+	asdasdsa
+	@events = Event.all
+	@contact = Contact.first_or_create(email: "Olga@OlgaMedia.com", phone: "+1.408-489-0852", address: "262 Meadow Pine Place, San Jose, CA 95125, USA")
 	erb :index
 end
 
 get "/edit" do
 	protected!
+	@events = Event.all
+	@contact = Contact.first_or_create(email: "Olga@OlgaMedia.com", phone: "+1.408-489-0852", address: "262 Meadow Pine Place, San Jose, CA 95125, USA")
 	erb :edit
 end
 
 post "/event/add" do
 	protected!
-	@@events.push(params[:event])
+	Event.create(params[:event])
 	redirect "/edit"
 end
 
 get "/event/remove/:id" do
 	protected!
-	@@events.delete_at(params[:id].to_i)
+	Event.get(params[:id].to_i).destroy!
 	redirect "/edit"
 end
 

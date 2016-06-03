@@ -179,16 +179,20 @@
 				<h2 class="eventsSectionTitle">Events</h2>
 
 				<div id="eventList">
-					<% @@events.each do |event| %>
+					<% @events.each do |event| %>
 						<div class="event">
-							<h3 class="eventTitle"><%= event[:title] %></h3>
-							<p class="eventSubTitle">Date: <%= event[:date] %> | Fee: <%= event[:fee] %></p>
+							<h3 class="eventTitle"><%= event.title %></h3>
+							<p class="eventSubTitle">Date: <%= event.date %> | Fee: <%= event.fee %></p>
 
-							<p class="eventSummary"><%= event[:summary] %></p>
-							<p class="eventAddress"><%= event[:address] %></p>
-							<a href="<%= event[:link] %>" class="eventLink"><%= event[:linkText] %></a>
+							<p class="eventSummary"><%= event.summary %></p>
+							<p class="eventAddress"><%= event.address %></p>
+							<a href="<%= event.link %>" class="eventLink"><%= event.linkText %></a>
 							<hr>
 						</div>
+					<% end %>
+
+					<% if @events.empty? %>
+						<p class="noEvents">No events currently listed.</p>
 					<% end %>
 				</div>
 
@@ -206,9 +210,9 @@
 
 		<div id="contact">
 			<div class="middle">
-				<p id="address"><%= @@contact[:address] %></p>
-				<p id="phone"><%= @@contact[:phone] %></p>
-				<p id="email"><%= @@contact[:email] %></p>
+				<p id="address"><%= @contact.address %></p>
+				<p id="phone"><%= @contact.phone %></p>
+				<p id="email"><%= @contact.email %></p>
 			</div>
 		</div>
 	</body>
