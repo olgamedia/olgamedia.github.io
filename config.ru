@@ -1,6 +1,5 @@
 require "bundler/setup"
 Bundler.require(:default)
-
 configure(:development) do
   set :server, :puma
   set :port, 8080
@@ -21,6 +20,9 @@ configure(:production) do
   set :server, :puma
   set :port, 80
   set :environment, :production
+
+  set :cache_enabled, true
+  set :cache_output_dir, "#{settings.root}/public/cache"
 
   DataMapper.setup :default, {
     :adapter  => "postgres",
