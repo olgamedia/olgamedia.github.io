@@ -1,0 +1,11 @@
+##Dev
+*create postgres database "olga_media_development"
+*run "bundle"
+*run "rackup"
+
+
+##Prod
+*create postgres database "olga_media_production"
+*set env variables: ADMIN_USER, ADMIN_PASS, DATABASE_URL, DATABASE_USER, DATABASE_PASS, RACK_ENV (heroku does this for you.)
+*run "bundle"
+*run "rackup"
