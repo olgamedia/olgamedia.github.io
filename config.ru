@@ -10,6 +10,9 @@ configure(:development) do
 
   set :bind, "0.0.0.0"
 
+  admin_user = "admin"
+  admin_pass = "pass"
+
   DataMapper.setup :default, {
     :adapter  => "postgres",
     :database => "olga_media_development",
@@ -28,6 +31,9 @@ configure(:production) do
 
   set :cache_enabled, true
   set :cache_output_dir, "#{settings.root}/public/cache"
+
+  admin_user = ENV["ADMIN_USER"]
+  admin_pass = ENV["ADMIN_PASS"]
 
   DataMapper.setup :default, {
     :adapter  => "postgres",
