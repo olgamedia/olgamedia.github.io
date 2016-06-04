@@ -35,12 +35,14 @@ configure(:production) do
   admin_user = ENV["ADMIN_USER"]
   admin_pass = ENV["ADMIN_PASS"]
 
-  DataMapper.setup :default, {
-    :adapter  => "postgres",
-    :database => ENV["DATABASE_URL"],
-    :user     => ENV["DATABASE_USER"],
-    :password => ENV["DATABASE_PASS"]
-  }
+  DataMapper.setup(:default, ENV["HEROKU_POSTGRESQL_PUCE_URL"])
+
+  # DataMapper.setup :default, {
+  #   :adapter  => "postgres",
+  #   :database => ENV["DATABASE_URL"],
+  #   :user     => ENV["DATABASE_USER"],
+  #   :password => ENV["DATABASE_PASS"]
+  # }
 
   Dir["lib/*.rb"].each {|file| require file }
 
