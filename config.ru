@@ -19,7 +19,7 @@ configure(:development) do
     :user     => "peter"
   }
 
-  Dir["lib/*"].each {|file| load file }
+  Dir["#{settings.root}/lib/*"].each {|file| load file }
 
   DataMapper.finalize.auto_upgrade!
 end
@@ -44,7 +44,7 @@ configure(:production) do
   #   :password => ENV["DATABASE_PASS"]
   # }
 
-  Dir["lib/*.rb"].each {|file| require file }
+  Dir["#{settings.root}/lib/*.rb"].each {|file| require file }
 
   DataMapper.finalize.auto_upgrade!
 end
