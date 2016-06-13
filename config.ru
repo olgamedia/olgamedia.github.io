@@ -12,8 +12,8 @@ configure(:development) do
 
   set :bind, "0.0.0.0"
 
-  admin_user = "admin"
-  admin_pass = "pass"
+  set :admin_user, "admin"
+  set :admin_pass, "pass"
 
   DataMapper.setup :default, {
     :adapter  => "postgres",
@@ -34,8 +34,8 @@ configure(:production) do
   set :cache_enabled, true
   set :cache_output_dir, "#{settings.root}/public/cache"
 
-  admin_user = ENV["ADMIN_USER"]
-  admin_pass = ENV["ADMIN_PASS"]
+  set :admin_user, ENV["ADMIN_USER"]
+  set :admin_pass, ENV["ADMIN_PASS"]
 
   DataMapper.setup(:default, ENV["HEROKU_POSTGRESQL_PUCE_URL"])
 

@@ -1,6 +1,6 @@
 def authorized?
   @auth ||=  Rack::Auth::Basic::Request.new(request.env)
-  @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [admin_user, admin_pass]
+  @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [settings.admin_user, settings.admin_pass]
 end
 
 def protected!
