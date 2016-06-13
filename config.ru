@@ -3,8 +3,10 @@ Bundler.require(:default)
 configure(:development) do
   set :server, :puma
   set :port, 8080
-  set :environment, :development
 
+  set :environment, :development
+  set :cache_environment, :development
+  
   set :cache_enabled, true
   set :cache_output_dir, "#{settings.root}/public/cache"
 
