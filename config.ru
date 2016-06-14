@@ -34,6 +34,8 @@ configure(:production) do
   set :cache_enabled, true
   set :cache_output_dir, "#{settings.root}/public/cache"
 
+  set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 90]
+
   set :admin_user, ENV["ADMIN_USER"]
   set :admin_pass, ENV["ADMIN_PASS"]
 
