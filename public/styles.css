@@ -51,7 +51,7 @@ nav a {
 #banner {
 	width: 100%;
 	height: 600px;
-	background: url(img/lines.png) repeat left top, url(img/collage_background.jpg) repeat left top;
+	background: url(img/lines.png) repeat left top, url(img/small_collage_background.jpg) repeat left top;
 	background-size: auto, 800px;
 }
 #slides {
