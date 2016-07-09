@@ -51,7 +51,7 @@ nav a {
 #banner {
 	width: 100%;
 	height: 600px;
-	background: url(/img/lines.png) repeat left top, url(/img/small_collage_background.jpg) repeat left top;
+	background: url(../img/lines.png) repeat left top, url(../img/small_collage_background.jpg) repeat left top;
 	background-size: auto, 800px;
 }
 #slides {
@@ -177,37 +177,37 @@ nav a {
 	height: 100%;
 }
 .clientLogo:nth-child(1) {
-	background: url(/img/client_microsoft_logo.png);
+	background: url(../img/client_microsoft_logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 .clientLogo:nth-child(2) {
-	background: url(/img/client_intel_logo.png);
+	background: url(../img/client_intel_logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 .clientLogo:nth-child(3) {
-	background: url(/img/client_google_logo.png);
+	background: url(../img/client_google_logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 .clientLogo:nth-child(4) {
-	background: url(/img/client_facebook_logo.png);
+	background: url(../img/client_facebook_logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 .clientLogo:nth-child(5) {
-	background: url(/img/client_paypal_logo.png);
+	background: url(../img/client_paypal_logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 .clientLogo:nth-child(6) {
-	background: url(/img/client_atmail_logo.png);
+	background: url(../img/client_atmail_logo.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -265,7 +265,7 @@ nav a {
 	right: 10px;
 	width: 20px;
 	height: 20px;
-	background: url(/img/project_link_icon.svg);
+	background: url(../img/project_link_icon.svg);
 	background-size: 100% 100%;
 }
 #events {
@@ -453,7 +453,7 @@ hr {
 	height: 18px;
 	width: 100%;
 	text-align: center;
-	background: #336E7B url(/img/lines.png);
+	background: #336E7B url(../img/lines.png);
 	overflow: hidden;
 }
 .builtBy {
