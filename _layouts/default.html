@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Olga Media</title>
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<div class="middle">
+				<a id="logo" href="/" rel="home" title="Olga Media"><img src="img/olga_media_logo.svg" alt="Olga Media"></a>
+
+				<nav>
+					<a href="#contact">Contact</a>
+					<a href="#events">Events</a>
+					<a href="#clientLogos">Portfolio</a>
+					<a href="#banner">Services</a>
+				</nav>
+			</div>
+		</header>
+		
+		{{ content }}
+
+		<div id="contact">
+			<div class="middle">
+				<p id="address">{{ site.address }}</p>
+				<p id="phone">{{ site.phone }}</p>
+				<p id="email">{{ site.email }}</p>
+			</div>
+		</div>
+
+		<div id="copyright">
+			<p><a class="builtBy" href="http://www.wutsu.com">Built with <img src="img/heart.svg"/> by Wutsu.</a></p>
+		</div>
+	</body>
+	<script async src="js/slider.js"></script>
+	<script async src="js/calendar.js"></script>
+</html>
