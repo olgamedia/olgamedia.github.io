@@ -1,5 +1,5 @@
 ---
-name: Project
+title: Project
 img: img/small_project_interview.jpg
 link: google.com
 ---

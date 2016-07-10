@@ -1,5 +1,5 @@
 ---
-name: Sergey V. Petrov
+title: Sergey V. Petrov
 img: img/small_project_sergey_v_petrov.jpg
 link: google.com
 ---

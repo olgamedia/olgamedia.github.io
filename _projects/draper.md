@@ -1,5 +1,5 @@
 ---
-name: Tim Draper
+title: Tim Draper
 img: img/small_project_tim_draper.jpg
 link: google.com
 ---

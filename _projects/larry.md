@@ -1,5 +1,5 @@
 ---
-name: Larry Ellison
+title: Larry Ellison
 img: img/small_project_larry_ellison.jpg
 link: google.com
 ---

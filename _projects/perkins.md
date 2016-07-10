@@ -1,5 +1,5 @@
 ---
-name: Tony Perkins
+title: Tony Perkins
 img: img/small_project_tony_perkins.jpg
 link: google.com
 ---

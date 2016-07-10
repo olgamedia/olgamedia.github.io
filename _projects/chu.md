@@ -1,5 +1,5 @@
 ---
-name: Kansen Chu
+title: Kansen Chu
 img: img/small_project_kansen_chu.jpg
 link: google.com
 ---

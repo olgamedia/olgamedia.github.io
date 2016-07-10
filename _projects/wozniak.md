@@ -1,5 +1,5 @@
 ---
-name: Steve Wozniak
+title: Steve Wozniak
 img: img/small_project_woz.jpg
 link: google.com
 ---
