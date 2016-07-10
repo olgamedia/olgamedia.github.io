@@ -229,8 +229,7 @@ nav a {
 	padding-top: 75%; 
 }
 .project {
-	background-position: cover;
-	background-size: 100% auto;
+	background-size: cover;
 }
 .project figcaption {
 	position: absolute;
