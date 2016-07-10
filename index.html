@@ -82,8 +82,7 @@ layout: default
 
 <div id="projects">
 	{% for project in site.projects %}
-		<figure class="project">
-			<img src="{{project.img}}">
+		<figure class="project" style="background-image: url({{project.img}});">
 			<figcaption>
 				<h2>{{ project.title }}</h2>
 				<p>{{ project.content }}</p>
