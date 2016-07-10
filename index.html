@@ -4,64 +4,32 @@ layout: default
 <div id="banner">
 	<div class="middle">
 		<div id="slides">
-			<div class="slide active">
-				<div class="slideContent">
-					<h2 class="slideTitle">Community Outreach</h2>
-					<p class="slideText">Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.</p>
+			{% for slide in site.slides %}
+				<div class="slide {% if forloop.first %}active{% endif %}">
+					<div class="slideContent">
+						<h2 class="slideTitle">{{ slide.title }}</h2>
+						<p class="slideText">{{slide.content}}</p>
+					</div>
+					<div class="slideImage"><img src="{{slide.img}}"></div>
 				</div>
-				<div class="slideImage"><img src="img/service_outreach_icon.svg"></div>
-			</div>
-
-			<div class="slide">
-				<div class="slideContent">
-					<h2 class="slideTitle">Event Coverage</h2>
-					<p class="slideText">Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.</p>
-				</div>
-				<div class="slideImage"><img src="img/service_camera_icon.svg"></div>
-			</div>
-
-			<div class="slide">
-				<div class="slideContent">
-					<h2 class="slideTitle">Social Media</h2>
-					<p class="slideText">Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.</p>
-				</div>
-				<div class="slideImage"><img src="img/service_social_icon.svg"></div>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
 </div>
 
 <div id="services">
 	<div class="middle">
-		<div class="service active">
-			<div class="serviceIcon">
-				<img src="img/service_outreach_icon.svg">
+		{% for slide in site.slides %}
+			<div class="service {% if forloop.first %}active{% endif %}">
+				<div class="serviceIcon">
+					<img src="{{slide.img}}">
+				</div>
+				<div class="serviceText">
+					<h5 class="serviceTitle">{{ slide.title }}</h5>
+					<p class="serviceSubTitle">{{ slide.subtitle }}</p>
+				</div>
 			</div>
-			<div class="serviceText">
-				<h5 class="serviceTitle">Community Outreach</h5>
-				<p class="serviceSubTitle">Engage with the community.</p>
-			</div>
-		</div>
-
-		<div class="service">
-			<div class="serviceIcon">
-				<img src="img/service_camera_icon.svg">
-			</div>
-			<div class="serviceText">
-				<h5 class="serviceTitle">Event Coverage</h5>
-				<p class="serviceSubTitle">Become a media sensation.</p>
-			</div>
-		</div>
-
-		<div class="service">
-			<div class="serviceIcon">
-				<img src="img/service_social_icon.svg">
-			</div>
-			<div class="serviceText">
-				<h5 class="serviceTitle">Social Media</h5>
-				<p class="serviceSubTitle">Enhance your online presence.</p>
-			</div>
-		</div>
+		{% endfor %}
 	</div>
 </div>
 

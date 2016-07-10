@@ -93,8 +93,9 @@ nav a {
 	padding-bottom: 32px;
 	text-shadow: 0 0 5px black;
 	font: 700 44px/50px "Montserrat", sans-serif;
-}
-.slideText {
+} 
+.slideText, .slideText p, .slideText h1, .slideText h2,
+.slideText h3, .slideText h4, .slideText h5, .slideText h6 {
 	color: white;
 	text-shadow: 0 0 5px black;
 	font: 400 18px/28px "Montserrat", sans-serif;
