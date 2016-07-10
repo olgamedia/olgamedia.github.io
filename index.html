@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Olga Media</title>
-		<meta charset="UTF-8">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body>
-		<header>
-			<div class="middle">
-				<a id="logo" href="/" rel="home" title="Olga Media"><img src="img/olga_media_logo.svg" alt="Olga Media"></a>
-
-				<nav>
-					<a href="#contact">Contact</a>
-					<a href="#events">Events</a>
-					<a href="#clientLogos">Portfolio</a>
-					<a href="#banner">Services</a>
-				</nav>
-			</div>
-		</header>
-		
-		<div id="banner">
+---
+layout: default
+---
+<div id="banner">
 	<div class="middle">
 		<div id="slides">
 			<div class="slide active">
@@ -181,19 +161,20 @@
 		<h2 class="eventsSectionTitle">Events</h2>
 
 		<div id="eventList">
-			
+			{% for event in site.events %}
 				<div class="event">
-					<h3 class="eventTitle">Ninjas oh boy?</h3>
-					<p class="eventSubTitle">Date:2013-11-28 21:00:00 -0800 | Fee:200</p>
-
-					<p class="eventSummary">Blablab blabla bla ba blablab blaba</p>
-					<p class="eventAddress">123 dr place, ca</p>
-					<a href="google.com" class="eventLink">google</a>
+					<h3 class="eventTitle">{{ event.title }}</h3>
+					<p class="eventSubTitle">Date:{{  event.date }} | Fee:{{  event.fee }}</p>
+					<p class="eventSummary">{{ event.summary }}</p>
+					<p class="eventAddress">{{ event.address }}</p>
+					<a href="{{ event.link }}" class="eventLink">{{ event.linkText }}</a>
 					<hr>
 				</div>
-			
+			{% endfor %}			
 
-			
+			{% if site.events == null %}
+				<p class="noEvents">No events currently listed.</p>
+			{% endif %}
 		</div>
 
 		<ul id="calendar">
@@ -207,19 +188,3 @@
 		</ul>
 	</div>
 </div>
-
-		<div id="contact">
-			<div class="middle">
-				<p id="address">262 Meadow Pine Place, San Jose, CA 95125, USA</p>
-				<p id="phone">+1.408-489-0852</p>
-				<p id="email">Olga@OlgaMedia.com</p>
-			</div>
-		</div>
-
-		<div id="copyright">
-			<p><a class="builtBy" href="http://www.wutsu.com">Built with <img src="img/heart.svg"/> by Wutsu.</a></p>
-		</div>
-	</body>
-	<script async src="js/slider.js"></script>
-	<script async src="js/calendar.js"></script>
-</html>
