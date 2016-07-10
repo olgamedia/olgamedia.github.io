@@ -81,79 +81,19 @@ layout: default
 </div>
 
 <div id="projects">
-	<figure class="project">
-		<img src="img/small_project_larry_ellison.jpg">
-		<figcaption>
-			<h2>Larry Ellison</h2>
-			<p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&B paleo tote bag cred scenester VHS everyday carry.</p>
+	{% for project in site.projects %}
+		<figure class="project">
+			<img src="{{project.img}}">
+			<figcaption>
+				<h2>{{ project.name }}</h2>
+				<p>{{ project.content }}</p>
 
-			<a href="#" class="projectLink"></a>
-		</figcaption>
-	</figure>
-
-	<figure class="project">
-		<img src="img/small_project_interview.jpg">
-		<figcaption>
-			<h2>Project Title</h2>
-			<p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&B paleo tote bag cred scenester VHS everyday carry.</p>
-			<a href="#" class="projectLink"></a>
-		</figcaption>
-	</figure>
-
-	<figure class="project">
-		<img src="img/small_project_sam_liccardo.jpg">
-		<figcaption>
-			<h2>Sam Liccardo</h2>
-			<p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&B paleo tote bag cred scenester VHS everyday carry.</p>
-			<a href="#" class="projectLink"></a>
-		</figcaption>
-	</figure>
-
-	<figure class="project">
-		<img src="img/small_project_sergey_v_petrov.jpg">
-		<figcaption>
-			<h2>Sergey V. Petrov</h2>
-			<p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&B paleo tote bag cred scenester VHS everyday carry.</p>
-			<a href="#" class="projectLink"></a>
-		</figcaption>
-	</figure>
-
-	<figure class="project">
-		<img src="img/small_project_tim_draper.jpg">
-		<figcaption>
-			<h2>Tim Draper</h2>
-			<p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&B paleo tote bag cred scenester VHS everyday carry.</p>
-			<a href="#" class="projectLink"></a>
-		</figcaption>
-	</figure>
-
-	<figure class="project">
-		<img src="img/small_project_woz.jpg">
-		<figcaption>
-			<h2>Steve Wozniak</h2>
-			<p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&B paleo tote bag cred scenester VHS everyday carry.</p>
-			<a href="#" class="projectLink"></a>
-		</figcaption>
-	</figure>
-
-	<figure class="project">
-		<img src="img/small_project_kansen_chu.jpg">
-		<figcaption>
-			<h2>Kansen Chu</h2>
-			<p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&B paleo tote bag cred scenester VHS everyday carry.</p>
-			<a href="#" class="projectLink"></a>
-		</figcaption>
-	</figure>
-
-	<figure class="project">
-		<img src="img/small_project_tony_perkins.jpg">
-		<figcaption>
-			<h2>Tony Perkins</h2>
-			<p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&B paleo tote bag cred scenester VHS everyday carry.</p>
-			<a href="#" class="projectLink"></a>
-		</figcaption>
-	</figure>
-
+				{% if project.link != null %}
+					<a href="{{project.link}}" class="projectLink"></a>
+				{% endif %}
+			</figcaption>
+		</figure>
+	{% endfor %}
 </div>
 
 <div id="events">

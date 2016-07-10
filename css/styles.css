@@ -238,6 +238,7 @@ nav a {
 }
 .project figcaption {
 	position: absolute;
+	width: 100%;
 	bottom: 0px;
 	padding: 10px;
 	background: #fff;
