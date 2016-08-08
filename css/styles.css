@@ -415,38 +415,22 @@ hr {
 #calendar li.oM {
 	color: gray;
 }
-#contact {
+footer {
 	width: 100%;
-	height: 120px;
 	background: #22313F;
+}
+.ft {
 	overflow: hidden;
 }
-.half {
-	width: 50%;
+#contact {
 	float: left;
 	overflow: hidden;
-}
-#contact hr {
-	border-top: 4px solid #B9121B;
-}
-#contact h3 {
-	color: white;
-	font: 400 22px/24px "Montserrat", sans-serif;
 }
 #contact p {
 	float: left;
 	color: lightgray;
-	font: 400 14px/16px "Montserrat", sans-serif;
-
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-#contact p:nth-child(even) {
-	padding: 0 10px;
+	padding-right: 10px;
+	font: 400 14px/120px "Montserrat", sans-serif;
 }
 #contact p#address {
 	color: lightgray;
@@ -457,14 +441,21 @@ hr {
 #contact p#email {
 	color: #C74149;
 }
-#contact .socialMedia {
+#share {
 	float: right;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
+	overflow: hidden;
+}
+#share a {
+	float: right;
+	color: lightgray;
+	padding-right: 10px;
+	font: 400 14px/120px "Montserrat", sans-serif;
+}
+#share a img {
+	display: inline;
+	width: auto;
+	height: 36px;
+	top: 11px;
 }
 #copyright {
 	height: 18px;
@@ -540,5 +531,32 @@ hr {
 	}
 	#contact #phone {
 		padding: 10px 0;
+	}
+}
+
+@media (max-width: 860px) {
+	.ft {
+		padding: 30px 0;
+	}
+	#contact {
+		width: 100%;
+	}
+	#contact p {
+		float: none;
+		line-height: 24px;
+		text-align: center;
+	}
+	#share {
+		float: none;
+		/* iconsize * icons + padding-right */
+		width: 174px;
+		margin: 0 auto;
+	}
+	#share a {
+		line-height: 42px;
+		text-align: center;
+	}
+	#share a:first-child {
+		padding: 0;
 	}
 }
