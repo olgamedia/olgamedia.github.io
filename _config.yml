@@ -8,28 +8,31 @@ collections:
 - events
 
 defaults:
-  - scope:
-        path: ""
-        type: slides
+  -
+    scope:
+      path: ""
+      type: slides
+    values: 
+      title:
+      subtitle:
+      img:
+  -
+    scope:
+      path: ""
+      type: projects
     values:
-        title: ""
-        subtitle: ""
-        img: ""
-  - scope:
-        path: ""
-        type: projects
+      title:
+      img:
+      link:
+  -
+    scope:
+      path: ""
+      type: events
     values:
-        title: ""
-        img: ""
-        link: ""
-  - scope:
-        path: ""
-        type: events
-    values:
-        title: ""
-        date: ""
-        fee: ""
-        address: ""
-        link: ""
-        linkText: ""
-        youtube: ""
+      title:
+      date: "2016-1-1 1:00:00"
+      fee:
+      address:
+      link:
+      linkText:
+      youtube:
