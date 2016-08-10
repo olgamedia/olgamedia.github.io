@@ -77,7 +77,7 @@ layout: default
 					{% endif %}
 
 					<h3 class="eventTitle">{{ event.title }}</h3>
-					<p class="eventSubTitle">Date:{{ event.date }} | Fee:{{ event.fee }}</p>
+					<p class="eventSubTitle">Date: {{ event.date | date: '%B %d, %Y' }} | Fee: {{ event.fee }}</p>
 					<div class="eventSummary">{{ event.content }}</div>
 					<p class="eventAddress">{{ event.address }}</p>
 					<a href="{{ event.link }}" class="eventLink">{{ event.linkText }}</a>

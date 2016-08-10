@@ -6,3 +6,33 @@ collections:
 - slides
 - projects
 - events
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: slides
+    values: 
+      title:
+      subtitle:
+      img:
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      title:
+      img:
+      link:
+  -
+    scope:
+      path: ""
+      type: events
+    values:
+      title:
+      date: "2016-1-1 1:00:00"
+      fee:
+      address:
+      link:
+      linkText:
+      youtube:

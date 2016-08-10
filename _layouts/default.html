@@ -16,7 +16,7 @@
 				<nav>
 					<a href="#contact">Contact</a>
 					<a href="#events">Events</a>
-					<a href="#clientLogos">Portfolio</a>
+					<a href="#clientLogos">People</a>
 					<a href="#banner">Services</a>
 				</nav>
 			</div>
@@ -24,17 +24,25 @@
 		
 		{{ content }}
 
-		<div id="contact">
-			<div class="middle">
-				<p id="address">{{ site.data.contact.address }}</p>
-				<p id="phone">{{ site.data.contact.phone }}</p>
-				<p id="email">{{ site.data.contact.email }}</p>
+		<footer>
+			<div class="middle ft">
+				<div id="contact">
+					<p id="address">{{ site.data.contact.address }}</p>
+					<p id="phone">{{ site.data.contact.phone }}</p>
+					<p id="email">{{ site.data.contact.email }}</p>
+				</div>
+				<div id="share">
+					<a href="http://pinterest.com/pin/create/button/?url=www.olgamedia.com&description=Olga Media" target="_blank"><img src="img/pinterest.svg"/></a>
+					<a href="https://plus.google.com/share?url=www.olgamedia.com" target="_blank"><img src="img/google-plus.svg"/></a>
+					<a href="http://twitter.com/share?text=Olga Media&url=www.olgamedia.com&via=olga_media" target="_blank"><img src="img/twitter.svg"/></a>
+					<a href="http://www.facebook.com/sharer.php?u=www.olgamedia.com" target="_blank"><img src="img/facebook.svg"/></a>
+				</div>
 			</div>
-		</div>
-
-		<div id="copyright">
-			<p><a class="builtBy" href="http://www.wutsu.com">Built with <img src="img/heart.svg"/> by Wutsu.</a></p>
-		</div>
+			
+			<div id="copyright">
+				<p><a class="builtBy" href="http://www.wutsu.com">Built with <img src="img/heart.svg"/> by Wutsu.</a></p>
+			</div>
+		</footer>
 	</body>
 	<script async src="js/slider.js"></script>
 	<script async src="js/calendar.js"></script>
