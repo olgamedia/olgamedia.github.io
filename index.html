@@ -1,35 +1,95 @@
----
-layout: default
----
-<div id="banner">
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Olga Media</title>
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico?">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<div class="middle">
+				<a id="logo" href="/" rel="home" title="Olga Media"><img src="img/olga_media_logo.svg" alt="Olga Media"></a>
+
+				<nav>
+					<a href="#contact">Contact</a>
+					<a href="#events">Events</a>
+					<a href="#clientLogos">People</a>
+					<a href="#banner">Services</a>
+				</nav>
+			</div>
+		</header>
+		
+		<div id="banner">
 	<div class="middle">
 		<div id="slides">
-			{% for slide in site.slides %}
-				<div class="slide {% if forloop.first %}active{% endif %}">
+			
+				<div class="slide active">
 					<div class="slideContent">
-						<h2 class="slideTitle">{{ slide.title }}</h2>
-						<div class="slideText">{{slide.content}}</div>
+						<h2 class="slideTitle">Community Outreach</h2>
+						<div class="slideText"><p>Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.</p>
+</div>
 					</div>
-					<div class="slideImage"><img src="{{slide.img}}"></div>
+					<div class="slideImage"><img src="img/service_outreach_icon.svg"></div>
 				</div>
-			{% endfor %}
+			
+				<div class="slide ">
+					<div class="slideContent">
+						<h2 class="slideTitle">Event Coverage</h2>
+						<div class="slideText"><p>Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.</p>
+</div>
+					</div>
+					<div class="slideImage"><img src="img/service_camera_icon.svg"></div>
+				</div>
+			
+				<div class="slide ">
+					<div class="slideContent">
+						<h2 class="slideTitle">Social Media</h2>
+						<div class="slideText"><p>Kombucha banh mi meditation whatever, VHS mustache swag fashion axe hammock everyday carry. Narwhal etsy gastropub kogi, gluten-free taxidermy crucifix godard fashion axe master cleanse tousled man braid cred tumblr semiotics.</p>
+</div>
+					</div>
+					<div class="slideImage"><img src="img/service_social_icon.svg"></div>
+				</div>
+			
 		</div>
 	</div>
 </div>
 
 <div id="services">
 	<div class="middle">
-		{% for slide in site.slides %}
-			<div class="service {% if forloop.first %}active{% endif %}">
+		
+			<div class="service active">
 				<div class="serviceIcon">
-					<img src="{{slide.img}}">
+					<img src="img/service_outreach_icon.svg">
 				</div>
 				<div class="serviceText">
-					<h5 class="serviceTitle">{{ slide.title }}</h5>
-					<p class="serviceSubTitle">{{ slide.subtitle }}</p>
+					<h5 class="serviceTitle">Community Outreach</h5>
+					<p class="serviceSubTitle">Engage with the community.</p>
 				</div>
 			</div>
-		{% endfor %}
+		
+			<div class="service ">
+				<div class="serviceIcon">
+					<img src="img/service_camera_icon.svg">
+				</div>
+				<div class="serviceText">
+					<h5 class="serviceTitle">Event Coverage</h5>
+					<p class="serviceSubTitle">Become a media sensation.</p>
+				</div>
+			</div>
+		
+			<div class="service ">
+				<div class="serviceIcon">
+					<img src="img/service_social_icon.svg">
+				</div>
+				<div class="serviceText">
+					<h5 class="serviceTitle">Social Media</h5>
+					<p class="serviceSubTitle">Enhance your online presence.</p>
+				</div>
+			</div>
+		
 	</div>
 </div>
 
@@ -49,18 +109,103 @@ layout: default
 </div>
 
 <div id="projects">
-	{% for project in site.projects %}
-		<figure class="project" style="background-image: url({{project.img}});">
+	
+		<figure class="project" style="background-image: url(img/small_project_woz.jpg);">
 			<figcaption>
-				<h2>{{ project.title }}</h2>
-				<p>{{ project.content }}</p>
+				<h2>Steve Wozniak</h2>
+				<p><p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&amp;B paleo tote bag cred scenester VHS everyday carry.</p>
+</p>
 
-				{% if project.link != null %}
-					<a href="{{project.link}}" class="projectLink"></a>
-				{% endif %}
+				
+					<a href="google.com" class="projectLink"></a>
+				
 			</figcaption>
 		</figure>
-	{% endfor %}
+	
+		<figure class="project" style="background-image: url(img/small_project_larry_ellison.jpg);">
+			<figcaption>
+				<h2>Larry Ellison</h2>
+				<p><p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&amp;B paleo tote bag cred scenester VHS everyday carry.</p>
+</p>
+
+				
+					<a href="google.com" class="projectLink"></a>
+				
+			</figcaption>
+		</figure>
+	
+		<figure class="project" style="background-image: url(img/small_project_tim_draper.jpg);">
+			<figcaption>
+				<h2>Tim Draper</h2>
+				<p><p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&amp;B paleo tote bag cred scenester VHS everyday carry.</p>
+</p>
+
+				
+					<a href="google.com" class="projectLink"></a>
+				
+			</figcaption>
+		</figure>
+	
+		<figure class="project" style="background-image: url(img/small_project_sam_liccardo.jpg);">
+			<figcaption>
+				<h2>Sam Liccardo</h2>
+				<p><p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&amp;B paleo tote bag cred scenester VHS everyday carry.</p>
+</p>
+
+				
+					<a href="google.com" class="projectLink"></a>
+				
+			</figcaption>
+		</figure>
+	
+		<figure class="project" style="background-image: url(img/small_project_tony_perkins.jpg);">
+			<figcaption>
+				<h2>Tony Perkins</h2>
+				<p><p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&amp;B paleo tote bag cred scenester VHS everyday carry.</p>
+</p>
+
+				
+					<a href="google.com" class="projectLink"></a>
+				
+			</figcaption>
+		</figure>
+	
+		<figure class="project" style="background-image: url(img/small_project_interview.jpg);">
+			<figcaption>
+				<h2>Project</h2>
+				<p><p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&amp;B paleo tote bag cred scenester VHS everyday carry.</p>
+</p>
+
+				
+					<a href="google.com" class="projectLink"></a>
+				
+			</figcaption>
+		</figure>
+	
+		<figure class="project" style="background-image: url(img/small_project_kansen_chu.jpg);">
+			<figcaption>
+				<h2>Kansen Chu</h2>
+				<p><p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&amp;B paleo tote bag cred scenester VHS everyday carry.</p>
+</p>
+
+				
+					<a href="google.com" class="projectLink"></a>
+				
+			</figcaption>
+		</figure>
+	
+		<figure class="project" style="background-image: url(img/small_project_sergey_v_petrov.jpg);">
+			<figcaption>
+				<h2>Sergey V. Petrov</h2>
+				<p><p>Bicycle rights selfies listicle, craft beer hashtag synth PBR&amp;B paleo tote bag cred scenester VHS everyday carry.</p>
+</p>
+
+				
+					<a href="google.com" class="projectLink"></a>
+				
+			</figcaption>
+		</figure>
+	
 </div>
 
 <div id="events">
@@ -68,26 +213,53 @@ layout: default
 		<h2 class="eventsSectionTitle">Events</h2>
 
 		<div id="eventList">
-			{% for event in site.events %}
+			
 				<div class="event">
-					{% if event.youtube != null %}
-						<div class="youtube">
-							<iframe src="{{event.youtube}}" frameborder="0" allowfullscreen></iframe>
-						</div>
-					{% endif %}
+					
 
-					<h3 class="eventTitle">{{ event.title }}</h3>
-					<p class="eventSubTitle">Date: {{ event.date | date: '%B %d, %Y' }} | Fee: {{ event.fee }}</p>
-					<div class="eventSummary">{{ event.content }}</div>
-					<p class="eventAddress">{{ event.address }}</p>
-					<a href="{{ event.link }}" class="eventLink">{{ event.linkText }}</a>
+					<h3 class="eventTitle">Look Ma no video?</h3>
+					<p class="eventSubTitle">Date: June 28, 2013 | Fee: 200</p>
+					<div class="eventSummary"><p>Intelligentsia 90’s scenester pour-over aesthetic stumptown. Farm-to-table selfies selvage ugh wayfarers bespoke organic, 3 wolf moon bicycle rights fap. Quinoa lomo narwhal, hella taxidermy DIY marfa put a bird on it keytar. Portland helvetica kitsch, VHS tumblr church-key keffiyeh. Wayfarers godard before they sold out PBR&amp;B, photo booth schlitz selfies fap thundercats kombucha jean shorts typewriter master cleanse. Health goth lomo ugh kogi. Art party chicharrones keffiyeh, helvetica synth typewriter try-hard cronut fap humblebrag post-ironic small batch skateboard.</p>
+</div>
+					<p class="eventAddress">123 dr place, ca</p>
+					<a href="google.com" class="eventLink">google</a>
 					<hr>
 				</div>
-			{% endfor %}			
+			
+				<div class="event">
+					
+						<div class="youtube">
+							<iframe src="https://www.youtube.com/embed/5-eycTccyOc" frameborder="0" allowfullscreen></iframe>
+						</div>
+					
 
-			{% if site.events == null %}
-				<p class="noEvents">No events currently listed.</p>
-			{% endif %}
+					<h3 class="eventTitle">Ninjas oh boy?</h3>
+					<p class="eventSubTitle">Date: November 28, 2013 | Fee: 200</p>
+					<div class="eventSummary"><p>Intelligentsia 90’s scenester pour-over aesthetic stumptown. Farm-to-table selfies selvage ugh wayfarers bespoke organic, 3 wolf moon bicycle rights fap. Quinoa lomo narwhal, hella taxidermy DIY marfa put a bird on it keytar. Portland helvetica kitsch, VHS tumblr church-key keffiyeh. Wayfarers godard before they sold out PBR&amp;B, photo booth schlitz selfies fap thundercats kombucha jean shorts typewriter master cleanse. Health goth lomo ugh kogi. Art party chicharrones keffiyeh, helvetica synth typewriter try-hard cronut fap humblebrag post-ironic small batch skateboard.</p>
+</div>
+					<p class="eventAddress">123 dr place, ca</p>
+					<a href="google.com" class="eventLink">google</a>
+					<hr>
+				</div>
+			
+				<div class="event">
+					
+						<div class="youtube">
+							<iframe src="https://www.youtube.com/embed/ONaEH_eTfyc" frameborder="0" allowfullscreen></iframe>
+						</div>
+					
+
+					<h3 class="eventTitle">Bla Bla Bla!</h3>
+					<p class="eventSubTitle">Date: December 28, 2013 | Fee: 200</p>
+					<div class="eventSummary"><p>Intelligentsia 90’s scenester pour-over aesthetic stumptown. Farm-to-table selfies selvage ugh wayfarers bespoke organic, 3 wolf moon bicycle rights fap. Quinoa lomo narwhal, hella taxidermy DIY marfa put a bird on it keytar. Portland helvetica kitsch, VHS tumblr church-key keffiyeh. Wayfarers godard before they sold out PBR&amp;B, photo booth schlitz selfies fap thundercats kombucha jean shorts typewriter master cleanse. Health goth lomo ugh kogi. Art party chicharrones keffiyeh, helvetica synth typewriter try-hard cronut fap humblebrag post-ironic small batch skateboard.</p>
+</div>
+					<p class="eventAddress">123 dr place, ca</p>
+					<a href="google.com" class="eventLink">google</a>
+					<hr>
+				</div>
+						
+
+			
 		</div>
 
 		<ul id="calendar">
@@ -101,3 +273,27 @@ layout: default
 		</ul>
 	</div>
 </div>
+
+		<footer>
+			<div class="middle ft">
+				<div id="contact">
+					<p id="address">262 Meadow Pine Place, San Jose, CA 95125, USA</p>
+					<p id="phone">+1.408-489-0852</p>
+					<p id="email">Olga@OlgaMedia.com</p>
+				</div>
+				<div id="share">
+					<a href="http://pinterest.com/pin/create/button/?url=www.olgamedia.com&description=Olga Media" target="_blank"><img src="img/pinterest.svg"/></a>
+					<a href="https://plus.google.com/share?url=www.olgamedia.com" target="_blank"><img src="img/google-plus.svg"/></a>
+					<a href="http://twitter.com/share?text=Olga Media&url=www.olgamedia.com&via=olga_media" target="_blank"><img src="img/twitter.svg"/></a>
+					<a href="http://www.facebook.com/sharer.php?u=www.olgamedia.com" target="_blank"><img src="img/facebook.svg"/></a>
+				</div>
+			</div>
+			
+			<div id="copyright">
+				<p><a class="builtBy" href="http://www.wutsu.com">Built with <img src="img/heart.svg"/> by Wutsu.</a></p>
+			</div>
+		</footer>
+	</body>
+	<script async src="js/slider.js"></script>
+	<script async src="js/calendar.js"></script>
+</html>
